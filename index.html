@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Data</title>
+</head>
+
+
+
+<body>
+    <h1>Salary Data</h1>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let salary_data = `Company Name	Position	Salary
+                            EMC	Software Engineer	90420
+                            Mathworks	Software Engineer	90077
+                            IBM	Software Engineer	88390
+                            Wayfair	Software Engineer	96136
+                            Cisco	Software Engineer	122469
+                            Horizon International TRD	Software Engineer	74651
+                            TripAdvisor	Software Engineer	110927
+                            Fujitsu	Software Engineer	110958
+                            Google	Software Engineer	129980
+                            Oracle	Software Engineer	111960
+                            Wayfair	Full Stack Web Engineer	88500
+                            IBM	Full Stack Web Engineer	112000
+                            Motivis Learning Systems	
+                            Full Stack Web Engineer	65000`
+        document.getElementById("salary_content").innerHTML = salary_data
+
+        console.log(salary_data.split("\n"))
+        let rows = salary_data.split("\n")
+        console.log(rows)
+
+        let headers = rows[0]
+        let columns = headers.split(",")
+        console.log(columns)
+
+    </script>
+
+</body>
+
+</html>
